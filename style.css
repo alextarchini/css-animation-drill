@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#stage {
+    background: transparent url(./ex2.png) 0 0 no-repeat;
+    height: 100%; /* full height */
+    /* center and scale img nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hero {
+    width: 75px;
+    height: 75px;
+    border: 1px dashed red;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative; /* to be able to change position set to RELATIVE!! */
+    animation-name: myAnimation;
+    animation-duration: 20s;
+}
+@keyframes myAnimation {
+    0% {left: 0px; top: 0px;}
+    10% {left: 300px; top: 0px;}
+    20% {left: 300px; top: 50px;}
+    30% {left: 150px; top: 50px;}
+    40% {left: 150px; top: 50px; transform: rotate(45deg);}
+    50% {left: 0px; top: 50px; transform: rotate(45deg); border-color: 0900BD;}
+    100% {left: 300px; top: 200px; border-radius: 50%; border: solid yellow; width: 150px; height: 150px; background-color: #FBDA61;}
+/*     40% {left: 150px; top: 150px; transform: rotate(45deg);}
+    50% {left: 0px; top: 150px; transform: rotate(45deg);} */
+ /*    80% {right: 150px; top: 150px;} */
+ /*    100% {left: 300px; top: 600px;} */
+    
+}
+
